@@ -1,0 +1,43 @@
+.bg-top {
+    background-image: url('https://solar.network/assets/images/mask/mask-body-1.png');
+    background-size: cover;
+    overflow: hidden;
+    background-position: top;
+}
+
+.bg-bottom {
+    background-image: url('https://solar.network/assets/images/mask/mask-body-1.png');
+    background-size: cover;
+    overflow: hidden;
+    background-position: bottom;
+}
+
+.block-team-1 .cbp-item .cbp-caption-activeWrap {
+    background: #020203 !important;
+}
+
+.bg-dark {
+    background: #020202!important
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #ED5C15;
+    border-color: #ED5C15;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #d28018;
+    border-color: #d28018;
+    margin-top: 10px;
+}
+
+.block-service-1 {
+    background: #000000cf!important;
+}
+
+.block-contact-1 {
+    background: #000000cf!important;
+}

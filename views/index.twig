@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+{% include './component/head.twig' %}
+
+<body>
+    <div id="page-loader">
+        <div class="container-mid">
+            <img src="images/solar-enterprises/solar-enterprises-retina-x2.png" class="img-responsive" alt="image">
+            <div class="spinner-container">
+                <div class="css-spinner"></div>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <section id="hero" class="hero hero-2">
+            <div class="front-content page-enter-animated">
+                <div class="container-mid">
+                    <div class="inner 3d-hover">
+                        <img class="img-responsive logo" src="images/solar-enterprises/solar-outline.svg" alt="logo">
+                        <p>{{ i18n.__("Brighter Blockchain Solutions") }}</p>
+                    </div>
+                </div>
+                <div class="scroll-down"></div>
+                <div class="controls">
+                    <i class="volume-button fa fa-volume-up"></i>
+                    <i class="pause-button ti-control-pause"></i>
+                </div>
+            </div>
+            <div class="background-content page-enter-animated">
+                <div class="level-1">
+                    <div class="bg-overlay"></div>
+                    <div class="bg-pattern"></div>
+                    <div id="canvas"><canvas class="bg-effect layer" data-depth="0.2"></canvas></div>
+                </div>
+                <div class="level-2">
+                    <div class="dzsparallaxer auto-init allbody" data-options="{  mode_scroll: 'fromtop', animation_duration: '2' , direction: 'reverse' }">
+                        <div class="dzsparallaxer--target">
+                            <div class="bg-image layer" data-depth="0.04"></div>
+                            <div class="bg-video layer" data-depth="0.04"></div>
+                            <div class="bg-color layer" data-depth="0.04"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% include './component/navbar.twig' %}
+        <div class="bg-top">
+            <section id="about">
+                <div class="content block-about-1 padding-top-140 padding-bot-130">
+                    <div class="container text-left">
+                        <div class="header text-center scroll-animated-from-bottom">
+                            <h1>{{ i18n.__("About") }}</h1>
+                        </div>
+                        <div class="row padding-top-50">
+                            <div class="col-sm-8">
+                                <p class="scroll-animated-from-bottom">{{ i18n.__("about-text") }}
+                                </p>
+                            </div>
+                            <div class="col-sm-4">
+                                <img class="img-responsive scroll-animated-from-bottom" src="https://solar.org/assets/images/solar/solarheader.png" alt="Edit me">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="service">
+                <div class="content bg-middle  block-service-1 padding-top-130 padding-bot-200">
+                    <div class="container">
+                        <div class="header text-center">
+                            <h1>Our Products</h1>
+                        </div>
+                        <ul class="tab-navigation clearfix">
+                            <li class="scroll-animated-from-bottom">
+                                <a href="#service-data-1" data-toggle="tab">
+                                    <img src="images/products/tymt.ico" alt="Solar Wallet"> Solar Wallet
+                                </a>
+                            </li>
+                            <li class="scroll-animated-from-bottom">
+                                <a href="#service-data-2" data-toggle="tab">
+                                    <img src="images/products/tymt.ico" alt="tymt"> tymt™
+                                </a>
+                            </li>
+                            <li class="scroll-animated-from-bottom">
+                                <a href="#service-data-3" data-toggle="tab">
+                                    <img src="images/products/tymt.ico" alt="district53"> District 53
+                                </a>
+                            </li>
+                            <li class="scroll-animated-from-bottom">
+                                <a href="#service-data-4" data-toggle="tab">
+                                    <img src="images/products/tymt.ico" alt="solarcard"> Solar Card
+                                </a>
+                            </li>
+                            <li class="scroll-animated-from-bottom">
+                                <a href="#service-data-5" data-toggle="tab">
+                                    <img src="images/products/tymt.ico" alt="moon.store"> Moon.store
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content scroll-animated-from-bottom">
+                            <div class="tab-pane fade in active" id="service-data-1">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="images/products/tymt.ico" style="width:250px;" alt="showcase">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <h3>Solar Wallet</h3><br>
+                                        <p>
+                                            {{ i18n.__("about-solarwallet") }}
+                                        </p>
+                                        <div class="mt-4 pt-2">
+                                            <a href="#" class="btn btn-primary me-2">{{ i18n.__("Learn More") }}</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="service-data-2">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="images/products/tymt.ico" style="width:250px;" alt="showcase">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <h3>tymt™</h3><br>
+                                        <p>
+                                            {{ i18n.__("about-tymt") }}
+                                        </p>
+                                        <div class="mt-4 pt-2">
+                                            <a href="#" class="btn btn-primary me-2">{{ i18n.__("Learn More") }}</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="service-data-3">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="images/products/tymt.ico" style="width:250px;" alt="showcase">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <h3>District 53</h3><br>
+                                        <p>
+                                            {{ i18n.__("about-district53") }}
+                                        </p>
+                                        <div class="mt-4 pt-2">
+                                            <a href="#" class="btn btn-primary me-2">{{ i18n.__("Learn More") }}</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="service-data-4">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="images/products/tymt.ico" style="width:250px;" alt="showcase">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <h3>Solar Card</h3><br>
+                                        <p>
+                                            {{ i18n.__("about-solarcard") }}
+                                        </p>
+                                        <div class="mt-4 pt-2">
+                                            <a href="#" class="btn btn-primary me-2">{{ i18n.__("Learn More") }}</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="service-data-5">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="images/products/tymt.ico" style="width:250px;" alt="showcase">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <h3>moon.store</h3><br>
+                                        <p>
+                                            {{ i18n.__("about-moonstore") }}
+                                        </p>
+                                        <div class="mt-10 p-5">
+                                            <a href="#" class="btn btn-primary me-2">{{ i18n.__("Learn More") }}</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dzsparallaxer auto-init do-not-set-js-height" data-options="{  mode_scroll: 'normal', animation_duration: '0' , direction: 'reverse' }">
+                        <div class="divimage dzsparallaxer--target"></div>
+                        <div class="bg-overlay-section"></div>
+                    </div>
+                </div>
+            </section>
+            <section id="team">
+                <div class="content block-team-1 padding-top-140 padding-bot-160">
+                    <div class="container">
+                        <div class="header text-center scroll-animated-from-bottom">
+                            <h1>{{ i18n.__("Meet Our Team") }}</h1>
+                        </div>
+                        <div class="slider-container scroll-animated-from-bottom">
+                            {% include './component/team.twig' %}
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- CONTACT -->
+            <section id="contact">
+                <div class="row">
+                    <div class="content bg-middle block-contact-1 padding-top-130 padding-bot-120">
+                        <div class="container">
+                            <div class="header text-center scroll-animated-from-bottom">
+                                <h1>{{ i18n.__("Contact") }}</h1>
+                            </div>
+                            <div class="row">
+                                <div class="tab-content">
+                                    <div class="tab-pane fade in active" id="contact-data-1">
+                                        <!-- FORM-->
+                                        <form id="contact-form" action="assets/contact.php" method="post" autocomplete="off">
+                                            <!-- FORM GROUP -->
+                                            <div class="form-group scroll-animated-from-bottom">
+                                                <input type="text" id="contact-form-name" class="form-control" name="name" placeholder="* NAME">
+                                            </div>
+                                            <!-- /FORM GROUP -->
+                                            <!-- FORM GROUP -->
+                                            <div class="form-group scroll-animated-from-bottom">
+                                                <input type="text" id="contact-form-email" class="form-control" name="email" placeholder="* EMAIL">
+                                            </div>
+                                            <!-- /FORM GROUP -->
+                                            <!-- FORM GROUP -->
+                                            <!-- <div class="form-group scroll-animated-from-bottom">
+                                            <input data-require-filling="false" type="text" id="contact-form-company" class="form-control" name="company" placeholder="COMPANY">
+                                        </div> -->
+                                            <!-- /FORM GROUP -->
+                                            <!-- FORM GROUP -->
+                                            <!-- <div class="form-group scroll-animated-from-bottom">
+                                            <input data-require-filling="false" type="text" id="contact-form-address" class="form-control" name="address" placeholder="ADDRESS">
+                                        </div> -->
+                                            <!-- /FORM GROUP -->
+                                            <!-- FORM GROUP -->
+                                            <!-- <div class="form-group scroll-animated-from-bottom">
+                                            <input data-require-filling="false" type="text" id="contact-form-phone" class="form-control" name="phone" placeholder="PHONE">
+                                        </div> -->
+                                            <!-- /FORM GROUP -->
+                                            <!-- FORM GROUP ( HONEYPOT CAPTCHA - FOR SPAM PROTECTION - DO NOT REMOVE THIS FIELD ) -->
+                                            <div class="form-group scroll-animated-from-bottom hpc">
+                                                <input type="text" id="contact-form-country" class="form-control" name="country" placeholder="* COUNTRY">
+                                            </div>
+                                            <!-- /FORM GROUP ( HONEYPOT CAPTCHA - FOR SPAM PROTECTION - DO NOT REMOVE THIS FIELD ) -->
+                                            <!-- FORM GROUP -->
+                                            <div class="form-group scroll-animated-from-bottom">
+                                                <input data-require-filling="true" type="text" id="contact-form-subject" class="form-control" name="subject" placeholder="* SUBJECT">
+                                            </div>
+                                            <!-- /FORM GROUP -->
+                                            <!-- FORM GROUP -->
+                                            <div class="form-group button-container scroll-animated-from-bottom">
+                                                <input type="text" id="contact-form-message" class="form-control" name="message" placeholder="* MESSAGE">
+                                                <!-- BUTTON WRAPPER -->
+                                                <div class="button-wrapper">
+                                                    <button type="submit"><span class="ti-arrow-right"></span></button>
+                                                </div>
+                                                <!-- /BUTTON WRAPPER -->
+                                            </div>
+                                            <!-- /FORM GROUP -->
+                                        </form>
+                                        <!-- /FORM-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            </div>
+            {% include './component/footer.twig' %}
+            <div class="phantom-wrapper-popups"></div>
+        </div>
+        {% include './component/scripts.twig' %}
+</body>
+
+</html>
